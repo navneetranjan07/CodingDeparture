@@ -23,7 +23,7 @@ public class EmailService {
         log.info("Preparing to send OTP email to: {}", toEmail);
         try {
             SimpleMailMessage message = new SimpleMailMessage();
-            message.setFrom(senderEmail); // Explicitly set from email
+            message.setFrom(senderEmail);  
             message.setTo(toEmail);
             message.setSubject("Your CodingDeparture Login OTP");
             message.setText("Welcome to CodingDeparture!\n\nYour One-Time Password (OTP) for login is: " + otp + 
